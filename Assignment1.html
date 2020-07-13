@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Current Day and Time-Assignment 1 for JS</title>
+        <h1 align=center>Assignment 1 for JS</h1>
+        <h2 align=center>Current day&time</h2>
+    </head>
+    <body>
+        <p id="day"></p>
+        <p id="time"></p>
+      <script>
+      var t = new Date();
+      var d = t.getDay();
+      var dl=["Sunday","Monday","Wednesday","Tuesday","Thursday","Friday","Saturday"];  
+      document.getElementById('day').innerHTML="Today is : "+dl[d]+".";
+     </script>
+     <script>
+     var t= new Date();
+     var h,m,s,p;
+     h=t.getHours();
+     p=(h>=12)?"PM":"AM";
+     h=(h>12)?h-12:h;
+     m=t.getMinutes();
+     s=t.getSeconds();
+     if(h==0 && p=="PM")
+     {
+        if(m==0 && s==0)
+        {
+            h=12;
+            p="Noon";            
+        }
+        else
+        {
+            h=12;
+            p="PM";
+        }
+     }
+     if(h==0  && p=="AM" )
+     {
+         if(m==0 && s==0)
+         {
+            h=12;
+            p="Midnight";
+         }
+         else
+         {
+            h=12;
+            p="AM";
+         }
+     }
+     document.getElementById('time').innerHTML="Current Time is : "+h+" "+p+" : "+m+" : "+s;
+     </script>
+    </body>
+</html>
