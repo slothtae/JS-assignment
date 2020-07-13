@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Current Date</title>
+        <h1>Assignment 3</h1>
+        <h2>Current Date</h2>
+    </head>
+    <body>
+        <p id="date"></p>
+        <script text-align=center>
+            var d= new Date();
+            var dd,mm,yyyy;
+            dd= d.getDate();
+            if(dd<=9){
+                dd="0"+dd;
+            }
+            mm= d.getMonth();
+            if(mm<=9){
+                mm="0"+mm;
+            }
+            yyyy= d.getFullYear();
+            document.getElementById('date').innerHTML=dd+"-"+mm+"-"+yyyy;
+        </script>
+    </body>
+</html>
