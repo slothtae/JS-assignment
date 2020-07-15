@@ -1,0 +1,24 @@
+Question 1:
+sol:
+    Console object provides access to browser for debugging.How it works depends from browser to browser.
+    There are various methods we use in console function,from which some are:
+    1.console.assert(): Log a message and stack trace to console if the first argument is false.
+    2.console.clear(): clears the console.
+    3.console.count(): Log the number of time this line has been called with the given label.
+    4.console.countReset(): Resets the value of the counter with the given label.
+    5.console.debug():Outputs a message to the console with the log level "debug".
+    6.console.dir():Displays an interactive listing of the properties of a specified JavaScript object. 
+                    This listing lets you use disclosure triangles to examine the contents of child objects.
+    7.console.dirxml():Displays an XML/HTML Element representation of the specified object if possible or the JavaScript Object view if it is not possible.
+    8.console.error():Output an error message.
+    9.console.group():Creates a new inline group, indenting all following output by another level.
+    10.console.groupEnd():Exits inline group.
+    11.console.info():Informative logging of information.
+    12.console.log():For general output of logging information.
+    13.console.table():Displays tabular data as a table.
+    14.console.time():Starts a timer with a name specified as an input parameter.
+    15.console.timeEnd():Stops the specified timer and logs the elapsed time in seconds since it started.
+    16.console.timeLog():Logs the value of the specified timer to the console.
+    17.console.trace():Outputs a stack trace.
+    18.console.warn():Outputs a warning.
+    
